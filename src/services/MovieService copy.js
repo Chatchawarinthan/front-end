@@ -6,9 +6,9 @@ export async function searchMovie(search_data) {
 
         const response = await fetch('http://localhost:4000/api/movie/search?search_text='+search_data);
 
-        return await response.json(); //***
+       // return await response.json(); //***
 
-       // console.log('Search Movie response: ' + await response);
+        console.log('Search Movie response: ' + await response);
 
     }catch(error) {
         return [];
